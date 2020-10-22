@@ -1,4 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #1B1B1B;
+}
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    transition: all 350ms ease-out;
+    background-color: #2F2F2F;
+}
+
+.nav-content-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-logo {
+    margin: 0px 15px;
+    text-decoration: none;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 36px;
+    color: #E4E4E4;
+    text-shadow: 1px 1px black;
+}
+
+.nav-button-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: auto;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100px;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #757575;
+}
+
+.nav-button:hover {
+    color: #A5A5A5;
+    background-color: #464545;
+}
+
+.nav-button#active {
+    color: #E4E4E4;
+}
+
+.burger-button {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-button div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    background-color: #E4E4E4;
+}
+
+.content-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.content-wrap {
+    width: 100%;
+    padding-bottom: 30px;
+} 
+
+.footer {
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    position: absolute;
+    background-color: #2F2F2F;
+}
+
+.footer-content-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #757575;
+    margin: 0px 10px;
 }
