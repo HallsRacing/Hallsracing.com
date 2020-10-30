@@ -20,11 +20,16 @@ body {
 .nav-content-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
 }
 
+.search-icon {
+    height: 25px;
+    margin: 0px 10px;
+}
+
 .nav-logo {
-    margin: 0px 15px;
     text-decoration: none;
     font-family: 'Racing Sans One', cursive;
     font-size: 36px;
@@ -34,35 +39,49 @@ body {
 
 .nav-button-container {
     display: flex;
+    position: fixed;
+    right: 0;
+    height: 35vh;
+    top: 65px;
+    width: 250px;
+    flex-direction: column;
     align-items: center;
-    height: 100%;
-    margin-left: auto;
+    justify-content: space-evenly;
+    transform: translateX(100%);
+    z-index: 1;
+    background-color: #2F2F2F;
 }
 
 .nav-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100px;
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
-    color: #757575;
+    color: #838383;
+    opacity: 0.0;
+    width: 100%;
+    text-align: center;
 }
 
 .nav-button:hover {
-    color: #A5A5A5;
-    background-color: #464545;
+    color: #B1B1B1;
 }
 
 .nav-button#active {
     color: #E4E4E4;
 }
 
+.social-link {
+    margin: 0px 10px;
+    height: 25px;
+    opacity: 0.0;
+    border-radius: 50%;
+    color: #E4E4E4;
+}
+
 .burger-button {
-    display: none;
+    display: block;
     cursor: pointer;
+    margin: 0px 10px;
 }
 
 .burger-button div {
@@ -82,7 +101,7 @@ body {
 .content-wrap {
     width: 100%;
     padding-bottom: 30px;
-} 
+}
 
 .footer {
     width: 100%;
@@ -102,6 +121,55 @@ body {
 .footer-text {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
-    color: #757575;
+    color: #838383;
     margin: 0px 10px;
+}
+
+.footer-report {
+    margin-left: auto;
+    margin-right: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #838383;
+}
+
+.nav-active {
+    transform: translateX(0%) !important;
+    transition: transform 0.5s ease-in;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0.0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes nav-link-fade {
+    from {
+        opacity: 0.0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1.0;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes social-fade {
+    from {
+        opacity: 0.0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1.0;
+        transform: translateY(0px);
+    }
 }
