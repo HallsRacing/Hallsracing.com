@@ -8,17 +8,77 @@
     </head>
     <body>
         <div class="navbar">
-            
+            <div class="nav-content-container">
+                <a href="#" class="search-icon"><img src="images/search_icon.png" class="search-icon"></a>
+
+                <a href="index.html" class="nav-logo"><h class="nav-logo">HALLSRACING</h></a>
+
+                <div class="nav-button-container">
+                    <a href="index.html" class="nav-button">HOME</a>
+                    <a href="#" class="nav-button">GALLERY</a>
+                    <a href="#" class="nav-button">ABOUT</a>
+                    <a href="contact.html" class="nav-button" id="active">CONTACT</a>
+
+                    <div class="nav-social-container">
+                        <a href="#" target="_blank" class="social-link"><img src="images/f_logo.png" class="social-link"></a>
+                        <a href="#" target="_blank" class="social-link"><img src="images/t_logo.png" class="social-link"></a>
+                    </div>
+                </div>
+
+                <div class="burger-button">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
         </div>
 
         <div class="content-container">
             <div class="content-wrap">
+                <div class="contact-content-container">
+                    <div class="contact-form-container">
+                        <h class="contact-header">CONTACT US</h>
 
+                        <p class="contact-text">Please fill out this form & we will get back to you ASAP.</p>
+
+                        <form class="contact-form" action="mailto:test@test.com" method="post" enctype="text/plain">
+                            <input type="text" name="Name" placeholder="Name" class="contact-text-box">
+                            <input type="email" name="Email" placeholder="Email Address" class="contact-text-box">
+                            <input type="text" name="Reason" maxlength="75" placeholder="Reason for Contacting" class="contact-text-box">
+
+                            <div class="contact-button-container">
+                                <input type="submit" value="SEND" class="contact-button">
+                                <input type="reset" value="RESET" class="contact-button">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-ttk-container">
+                        <h class="ttk-header">Things to Consider</h>
+
+                        <ul>
+                            <li>Test</li>
+                            <li>Test</li>
+                            <li>Test</li>
+                            <li>Test</li>
+                            <li>Test</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="footer">
-                
+                <div class="footer">
+                    <div class="footer-content-container">
+                        <p class="footer-text">©2020, All Rights Reserved</p>
+    
+                        <a href="#" target="_blank" class="footer-report">Report an Issue</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <script src="JS/navbar-scroll.js"></script>
+        <script src="JS/burger-button.js"></script>
     </body>
 </html>
